@@ -15,13 +15,13 @@ class SecureStorageService {
   Future<void> write(String key, String dataToEncrypt) async {
     TimerService().captureOption3(
       () async {
-        await storage.write(key: key, value: dataToEncrypt);
+        await storage.write(key: "secure_storage_$key", value: dataToEncrypt);
       },
     );
   }
 
   Future<void> delete(String key) async {
-    return await storage.delete(key: key);
+    return await storage.delete(key: "secure_strorage_$key");
   }
 
   Future<void> deleteAll() async {
@@ -29,6 +29,6 @@ class SecureStorageService {
   }
 
   Future<String?> read(String key) async {
-    return await storage.read(key: key);
+    return await storage.read(key: "secure_storage_$key");
   }
 }

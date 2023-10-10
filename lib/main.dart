@@ -388,7 +388,7 @@ class _MyHomePageState extends State<MyHomePage> {
     option1TimeElapse = TimerService().option1;
 
     //option 2
-    SecureSharedPreferenceService().saveString(key, text);
+    SecureSharedPreferenceService().saveString("secure_pref_$key", text);
     option2TimeElapse = TimerService().option2;
 
     //option 3
@@ -433,7 +433,7 @@ class _MyHomePageState extends State<MyHomePage> {
     option1TimeElapse = TimerService().option1;
 
     //option 2
-    SecureSharedPreferenceService().saveBool(key, data);
+    SecureSharedPreferenceService().saveBool("secure_pref_$key", data);
     option2TimeElapse = TimerService().option2;
 
     //option 3
@@ -473,7 +473,7 @@ class _MyHomePageState extends State<MyHomePage> {
     option1TimeElapse = TimerService().option1;
 
     //option 2
-    SecureSharedPreferenceService().saveInt(key, data);
+    SecureSharedPreferenceService().saveInt("secure_pref_$key", data);
     option2TimeElapse = TimerService().option2;
 
     //option 3
@@ -515,7 +515,7 @@ class _MyHomePageState extends State<MyHomePage> {
     option1TimeElapse = TimerService().option1;
 
     //option 2
-    SecureSharedPreferenceService().saveStringList(key, data);
+    SecureSharedPreferenceService().saveStringList("secure_pref_$key", data);
     option2TimeElapse = TimerService().option2;
 
     //option 3
@@ -553,7 +553,7 @@ class _MyHomePageState extends State<MyHomePage> {
       option1TimeElapse = TimerService().option1;
 
       //option 2
-      SecureSharedPreferenceService().saveObject(key, model);
+      SecureSharedPreferenceService().saveObject("secure_pref_$key", model);
       option2TimeElapse = TimerService().option2;
 
       //option 3
