@@ -1,5 +1,5 @@
 # storage_encryption
-This is a rough analysisis between several options to save data to local storage using encryption. [[article]](https://medium.com/@sahnamm/encrypt-local-storage-in-flutter-mobile-ef2e4d40e0be)
+This is a rough analysis between several options to save data to local storage using encryption. [[article]](https://medium.com/@sahnamm/encrypt-local-storage-in-flutter-mobile-ef2e4d40e0be)
 
 Written in Flutter 3.13.1 and Dart 3.1.0
 
